@@ -3,6 +3,7 @@
 (function () {
     "use strict";
 
+    /** Create a server **/
     let http = require("http");
 
     http.createServer(function (request, response) {
@@ -14,5 +15,8 @@
         response.end();
 
     }).listen(8090);
+
+    /** Make an http request **/
+    //TODO
 
 }());
