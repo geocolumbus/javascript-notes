@@ -5,7 +5,6 @@
 (function () {
     "use strict";
 
-    /** How to chain promises together **/
     let p1 = function () {
         return new Promise(function (resolve, reject) {
             setTimeout(function () {
@@ -56,8 +55,6 @@
 
     /** Resolve the first that resolves **/
     Promise.race([p1(), p2(), p3()]).then(resRace).catch(rej);
-
-
 
 }());
 
