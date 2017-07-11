@@ -58,7 +58,7 @@
                 method: 'POST'
             },
             callback = function (response) {
-                var str = ''
+                let str = '';
                 response.on('data', function (chunk) {
                     str += chunk;
                 });

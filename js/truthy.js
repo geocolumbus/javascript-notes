@@ -107,7 +107,7 @@
     };
 
     function fun2() {
-    };
+    }
 
     fun ? console.log("true:  fun, where let fun = function(){}") : console.log("false: fun, where let fun = function(){} "); // true
     fun2 ? console.log("true:  fun2, where function fun2(){}") : console.log("false: fun2, where function fun2(){}"); // true
