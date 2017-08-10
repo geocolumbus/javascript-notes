@@ -1,27 +1,34 @@
 name: george
+
 address: 554 Kenbrook Drive
+
 list:
  - one
  - two
  - three
+
 items:
  first: 1
  second: 2.45
  third: 0xAA3
+
 logic:
   x: true
   y: false
+
 content: &word-list >
   Now is the time
   for all good men
   to come to the aid
   of their country.
+
 people: &people-list
   - george
   - alex
   - anne
   - zach
   - kelly
+
 group:
-  - group1 : *people-list
-  - words : *word-list
+  - group1: *people-list
+  - words: *word-list

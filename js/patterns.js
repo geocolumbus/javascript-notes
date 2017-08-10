@@ -15,5 +15,4 @@
 
     /* Pattern: Inheritance Parts */
 
-
 }());

@@ -1,1 +1,62 @@
-{"name":"george","city":"worthington"}
+{
+  "response": [
+    {
+      "title": "Space weather & telecommunications /",
+      "content": {
+        "bibliographicItem": {
+          "oclcNumber": "58720495",
+          "title": "Space weather & telecommunications /",
+          "author": "Goodman, John M.",
+          "materialFormat": "E_BOOK",
+          "publisher": "New York : Springer,",
+          "publicationYear": "2005",
+          "language": "eng",
+          "edition": null
+        },
+        "pieceDesignation": "11223344553",
+        "callNumber": {
+          "shelvingScheme": null,
+          "shelvingInformation": null,
+          "itemParts": null,
+          "prefixes": null,
+          "suffixes": null,
+          "description": "GC L023 009 R"
+        },
+        "recordType": "UNKNOWN",
+        "holdingInformation": null,
+        "numberOfPieces": 1,
+        "physicalDescription": null,
+        "cost": null,
+        "homeHoldingLocation": "EAST",
+        "permanentShelvingLocation": {
+          "element": [
+            "EAST-General"
+          ]
+        },
+        "previousShelvingLocation": null,
+        "temporaryShelvingLocation": null,
+        "publicNotes": null,
+        "staffNotes": null,
+        "useRestrictions": null,
+        "requestDate": "2017-07-12T15:24:10.000-04:00",
+        "patronName": "Campbell, George",
+        "enumeration": null,
+        "freeText": null,
+        "requestId": "f762e09c-2f03-4801-9735-f76a4bdb05ae",
+        "pullReason": "HOLD",
+        "lastPrintedDate": null,
+        "forward": "https://circ.sd00.worldcat-m1.dev.oclc.org/circ/requests/holds/f762e09c-2f03-4801-9735-f76a4bdb05ae/forward",
+        "scheduleStartDate": null,
+        "scheduleEndDate": null,
+        "pickupLocationName": "COP Sandbox - East Branch",
+        "ownerInstitutionId": "128807"
+      },
+      "updated": "2017-07-13T15:23:59.827Z",
+      "authors": [
+        {
+          "name": "Goodman, John M."
+        }
+      ]
+    }
+  ]
+}
