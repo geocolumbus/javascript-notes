@@ -1,4 +1,4 @@
-/*jslint esversion: 6 */
+/* jslint esversion: 6 */
 
 "use strict";
 

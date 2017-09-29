@@ -56,5 +56,27 @@
     /** Resolve the first that resolves **/
     Promise.race([p1(), p2(), p3()]).then(resRace).catch(rej);
 
+    /** Promise looping **/
+
+// Given async function sayHi
+    function sayHi() {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log('Hi');
+                resolve();
+            }, 50);
+        });
+    }
+
+// And an array of async functions to loop through
+    const asyncArray = [sayHi, sayHi, sayHi];
+
+// We create the start of a promise chain
+    let chain = Promise.resolve();
+
+// And append each function in the array to the promise chain
+    for (const func of asyncArray) {
+        chain = chain.then(func);
+    }
 }());
 
