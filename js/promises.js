@@ -94,8 +94,8 @@
 
     function add(x, y) {
         return new Promise(resolve => {
-            return resolveAfterTimeDelay(1000, x).then(val1 => {
-                return resolveAfterTimeDelay(1700, y).then(val2 => {
+            return resolveAfterTimeDelay(800, x).then(val1 => {
+                return resolveAfterTimeDelay(300, y).then(val2 => {
                     resolve(val1 + val2);
                 });
             });
@@ -110,8 +110,8 @@
     // async way
 
     async function asyncAdd(x, y) {
-        const val1 = await resolveAfterTimeDelay(1000, x);
-        const val2 = await resolveAfterTimeDelay(1700, y);
+        const val1 = await resolveAfterTimeDelay(1700, x);
+        const val2 = await resolveAfterTimeDelay(900, y);
         return val1 + val2;
     }
 
