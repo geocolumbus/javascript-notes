@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+"use strict";
+
 let _count = 0; // Static variables are implemented outside the class
 
 class Person {
@@ -52,3 +55,31 @@ console.log(`\n${me.name} at ${me.location}: count = ${Person.getCount()}\n`);
 const other = new Person("Sam", "Hobbiton");
 
 console.log(`\n${other.name} at ${other.location}: count = ${Person.getCount()}\n`);
+
+// constructor("George", "Worthington")
+// set name("George")
+// set location("Worthington")
+// static incrementCount()
+// get name()
+// get location()
+// static getCount()
+//
+// George at Worthington: count = 1
+//
+// set name("Alex")
+// set location("TWHS")
+// get name()
+// get location()
+// static getCount()
+//
+// Alex at TWHS: count = 1
+//
+// constructor("Sam", "Hobbiton")
+// set name("Sam")
+// set location("Hobbiton")
+// static incrementCount()
+// get name()
+// get location()
+// static getCount()
+//
+// Sam at Hobbiton: count = 2
