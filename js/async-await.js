@@ -5,15 +5,16 @@
 
 (function () {
     const a = () => {
+        console.log(`executing a()`);
         return new Promise((res, rej) => setTimeout(res, 1000, 'a'));
     };
     const b = (arg = "default") => {
-        console.log('in b', arg);
+        console.log(`executing b(${arg})`);
         return new Promise((res, rej) => setTimeout(res, 1000, 'b'));
     };
     const c = (arg = "default") => {
-        console.log('in c', arg);
-        return Promise.resolve('c');
+        console.log(`executing c(${arg})`);
+        return Promise.resolve('c complete');
     };
 
     // UTILIZING PROMISES
@@ -26,4 +27,5 @@
         const c1 = await c(b1);
         console.log(c1);
     })();
+
 }());
