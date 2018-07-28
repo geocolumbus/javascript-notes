@@ -1,7 +1,6 @@
 /*jshint esversion: 6 */
+// Requires ES8
 "use strict";
-
-// ES8 functionality
 
 (function () {
     const a = () => {

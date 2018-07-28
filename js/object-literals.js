@@ -1,4 +1,6 @@
 /*jshint esversion: 6 */
+// Requires ES6
+// Extended from arrays to objects in ES9
 "use strict";
 
 // Demonstrates shorthand property creation
@@ -26,8 +28,7 @@ console.log("------------------------------------------------");
 (function () {
     console.log("Demonstrates shorthand accessors");
     const obj = {
-        _name: 'Hulk'
-        ,
+        _name: 'Hulk',
         // getter/setters
         get name() {
             return this._name;

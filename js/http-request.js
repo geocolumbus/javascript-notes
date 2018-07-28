@@ -1,4 +1,6 @@
 /*jshint esversion: 6 */
+// Requires node.js
+// Requires ES5
 "use strict";
 
 /**

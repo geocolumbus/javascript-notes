@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-
+// Requires ES6
 // see http://www.datchley.name/promise-patterns-anti-patterns/
 
 "use strict";
