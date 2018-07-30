@@ -51,7 +51,7 @@ console.log("------------------------------------------------");
     const providePrefix = (name) => {
         return `my${name.substring(0, 1).toUpperCase()}${name.substring(1, name.length)}`
             ;
-    }
+    };
     const obj = {
         _name: 'Hulk'
         ,
