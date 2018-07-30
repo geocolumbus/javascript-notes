@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+// Requires ES8
 "use strict";
 
 // ES9 functionality

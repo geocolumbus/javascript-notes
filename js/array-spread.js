@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+// Requires ES6
 "use strict";
 
 let arr = [1, 2, 3, 4];

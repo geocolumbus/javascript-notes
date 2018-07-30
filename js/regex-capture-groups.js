@@ -1,7 +1,6 @@
 /*jshint esversion: 6 */
+// Requires ES9
 "use strict";
-
-// ES9 functionality
 
 // 45701 1234
 (function(){

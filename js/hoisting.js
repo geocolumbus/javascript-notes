@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+// Requires ES5
 "use strict";
 
 // undefined

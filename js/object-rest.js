@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
+// Requires ES6
+// Extended from arrays to objects in ES9
 "use strict";
-
-// ES9 functionality
 
 // Name is raju
 // Rest is { profession: 'developer',

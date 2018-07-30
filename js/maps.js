@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+// Requires ES6
 "use strict";
 
 const myMap = new Map();
