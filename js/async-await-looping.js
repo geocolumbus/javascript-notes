@@ -9,7 +9,7 @@
         return new Promise((res, rej) => {
             setTimeout(() => {
                 res(num * num);
-            }, 250);
+            }, Math.floor(Math.random() * 375) + 100);
         });
     };
 
@@ -20,7 +20,7 @@
         for (const num of nums) {
             sum += await square(num);
         }
-        return sum;
+        return sum; // sum is bunch of chained promising waiting to complete. It will fire .then() when all of them are done.
     }
 
     processArray(nums).then(sum => {
