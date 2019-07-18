@@ -11,7 +11,7 @@ The point of this project is to document how various javascript features work fo
 ```
 git clone https://github.com/geocolumbus/javascript-notes.git
 cd javascript-notes
-
+npm install  # I don't use any dependencies yet so this does nothing.
 ```
 
 You can run any file by typing ```node js/[filename]```.
