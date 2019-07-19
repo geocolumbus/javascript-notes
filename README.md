@@ -32,4 +32,13 @@ val = 4  i = 3  arr = 1,2,3,4
 
 ## Useful tutorials
 
+### Documentation and Tutorials
+
 * [JavaScript Info](https://javascript.info/)
+* [JavaScript Questions](https://github.com/lydiahallie/javascript-questions/blob/master/README.md)
+
+### Interview Questions
+
+* [guru99](https://www.guru99.com/javascript-interview-questions-answers.html)
+* [toptal](https://www.toptal.com/javascript/interview-questions)
+
