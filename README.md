@@ -41,4 +41,5 @@ val = 4  i = 3  arr = 1,2,3,4
 
 * [guru99](https://www.guru99.com/javascript-interview-questions-answers.html)
 * [toptal](https://www.toptal.com/javascript/interview-questions)
+* [edureka](https://www.edureka.co/blog/interview-questions/javascript-interview-questions/)
 
