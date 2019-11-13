@@ -1,4 +1,5 @@
-"use_strict";
+/*jshint esversion: 6 */
+"use strict";
 
 let add = function (a, b) {
     return a + b;
