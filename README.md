@@ -16,9 +16,7 @@ npm install  # I don't use any dependencies yet so this does nothing.
 
 You can run any file by typing ```node js/[filename]```.
 
-For example, ```node js/maps.js```
-
-Outputs
+For example, ```node js/maps.js``` outputs:
 
 ```
 1 2
