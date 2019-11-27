@@ -146,12 +146,12 @@ console.timeEnd("nested_loop");
 /*
 Trace
     at Object.<anonymous> (/Users/georgecampbell/intellij_workspace/javascript-notes/js/console.js:133:9)
-    at Module._compile (internal/modules/cjs/loader.js:678:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:689:10)
-    at Module.load (internal/modules/cjs/loader.js:589:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:528:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:520:3)
-    at Function.Module.runMain (internal/modules/cjs/loader.js:719:10)
+    at Module._compile (internal/modules-javascript/cjs/loader.js:678:30)
+    at Object.Module._extensions..js (internal/modules-javascript/cjs/loader.js:689:10)
+    at Module.load (internal/modules-javascript/cjs/loader.js:589:32)
+    at tryModuleLoad (internal/modules-javascript/cjs/loader.js:528:12)
+    at Function.Module._load (internal/modules-javascript/cjs/loader.js:520:3)
+    at Function.Module.runMain (internal/modules-javascript/cjs/loader.js:719:10)
     at startup (internal/bootstrap/node.js:228:19)
     at bootstrapNodeJSCore (internal/bootstrap/node.js:575:3)
  */
