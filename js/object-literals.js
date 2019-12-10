@@ -1,12 +1,12 @@
 /*jshint esversion: 6 */
 // Requires ES6
 // Extended from arrays to objects in ES9
-"use strict";
+"use strict"
 
 // Demonstrates shorthand property creation
 // {"todos":[{"id":1,"text":"Learn ES6"},{"id":2,"text":"Practice! Practice!"},{"id":3,"text":"Teach it"}]}
 
-(function () {
+const example1 = function () {
     console.log("Demonstrates shorthand property creation")
     let counter = 0,
         todos = [
@@ -17,15 +17,14 @@
     // similar to { todos: todos }
     const ret = {todos}
     console.log(JSON.stringify(ret))
+    console.log("------------------------------------------------")
     return ret
-})()
-
-console.log("------------------------------------------------")
+}
 
 // Demonstrates shorthand accessors
 // {"_name":"Hulk","name":"Hulk"}
 // Hulk
-(function () {
+const example2 = function () {
     console.log("Demonstrates shorthand accessors")
     const obj = {
         _name: 'Hulk',
@@ -39,32 +38,33 @@ console.log("------------------------------------------------")
     }
     console.log(JSON.stringify(obj))
     console.log(obj.name) // invokes getter
-})()
-
-console.log("------------------------------------------------")
+    console.log("------------------------------------------------")
+}
 
 // Demonstrates computed property/method
 // {"_name":"Hulk","fullName":"Hulk-a-mania"}
 // Hulk-a-mania
 // Hulk
-(function () {
+const example3 = function () {
     console.log("Demonstrates computed property/method")
-    const providePrefix = (name) => {
+    const providePrefix = name => {
         return `my${name.substring(0, 1).toUpperCase()}${name.substring(1, name.length)}`
 
     }
     const obj = {
-        _name: 'Hulk'
-        ,
+        _name: "Hulk",
         // computed property name
-        [`fullName`]: 'Hulk-a-mania'
-        ,
+        ["fullName"]: "Hulk-a-mania",
         // computed method name
-        [providePrefix('name')]() {
+        [providePrefix("name")]() {
             return this._name
         }
     }
     console.log(JSON.stringify(obj))
     console.log(obj.fullName)
     console.log(obj.myName())
-})()
+}
+
+example1()
+example2()
+example3()

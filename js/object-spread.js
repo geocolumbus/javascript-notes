@@ -7,7 +7,7 @@
 //    interests: 'devops',
 //    name: 'raju',
 //    address:
-//    { street: '1 inifinity drive',
+//    { street: '1 Infinity drive',
 //        state: 'OH',
 //        zip: [ 12345, 6789 ] } }
 (function () {
@@ -15,7 +15,7 @@
     const raju = {
         name: 'raju',
         address: {
-            street: '1 inifinity drive',
+            street: '1 Infinity drive',
             state: 'OH',
             zip: [
                 12345,
