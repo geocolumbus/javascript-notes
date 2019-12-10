@@ -20,7 +20,7 @@
     console.log(typeof fooSym)
 })()
 
-console.log("---------------------------")
+console.log("---------------------------");
 
 // TypeError: Symbol is not a constructor
 
@@ -40,7 +40,7 @@ console.log("---------------------------")
     console.log(Symbol.keyFor(fooSym))
 })()
 
-console.log("---------------------------")
+console.log("---------------------------");
 
 // ["(123)","(45)"]
 (function () {
