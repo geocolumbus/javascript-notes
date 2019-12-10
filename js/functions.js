@@ -1,8 +1,8 @@
 /*jshint esversion: 6 */
 // Requires ES5
 
-(function(){
-    "use strict";
+(function () {
+    "use strict"
 
     /* Function: Method Invocation Pattern */
 
@@ -21,6 +21,4 @@
     /* Function: Memoization */
 
 
-
-
-}());
+}())

@@ -7,52 +7,52 @@
 // {"todos":[{"id":1,"text":"Learn ES6"},{"id":2,"text":"Practice! Practice!"},{"id":3,"text":"Teach it"}]}
 
 (function () {
-    console.log("Demonstrates shorthand property creation");
+    console.log("Demonstrates shorthand property creation")
     let counter = 0,
         todos = [
             {id: ++counter, text: "Learn ES6"},
             {id: ++counter, text: "Practice! Practice!"},
             {id: ++counter, text: "Teach it"}
-        ];
+        ]
     // similar to { todos: todos }
-    const ret = {todos};
-    console.log(JSON.stringify(ret));
-    return ret;
-})();
+    const ret = {todos}
+    console.log(JSON.stringify(ret))
+    return ret
+})()
 
-console.log("------------------------------------------------");
+console.log("------------------------------------------------")
 
 // Demonstrates shorthand accessors
 // {"_name":"Hulk","name":"Hulk"}
 // Hulk
 (function () {
-    console.log("Demonstrates shorthand accessors");
+    console.log("Demonstrates shorthand accessors")
     const obj = {
         _name: 'Hulk',
         // getter/setters
         get name() {
-            return this._name;
+            return this._name
         },
         set name(name) {
             this._name = name
         }
-    };
-    console.log(JSON.stringify(obj));
-    console.log(obj.name); // invokes getter
-})();
+    }
+    console.log(JSON.stringify(obj))
+    console.log(obj.name) // invokes getter
+})()
 
-console.log("------------------------------------------------");
+console.log("------------------------------------------------")
 
 // Demonstrates computed property/method
 // {"_name":"Hulk","fullName":"Hulk-a-mania"}
 // Hulk-a-mania
 // Hulk
 (function () {
-    console.log("Demonstrates computed property/method");
+    console.log("Demonstrates computed property/method")
     const providePrefix = (name) => {
         return `my${name.substring(0, 1).toUpperCase()}${name.substring(1, name.length)}`
-            ;
-    };
+
+    }
     const obj = {
         _name: 'Hulk'
         ,
@@ -61,10 +61,10 @@ console.log("------------------------------------------------");
         ,
         // computed method name
         [providePrefix('name')]() {
-            return this._name;
+            return this._name
         }
-    };
-    console.log(JSON.stringify(obj));
-    console.log(obj.fullName);
-    console.log(obj.myName());
-})();
+    }
+    console.log(JSON.stringify(obj))
+    console.log(obj.fullName)
+    console.log(obj.myName())
+})()

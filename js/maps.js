@@ -37,7 +37,7 @@ console.log(`it.next() = ${JSON.stringify(it.next())}`)
 console.log(`it.next() = ${JSON.stringify(it.next())}`)
 console.log(`it.next() = ${JSON.stringify(it.next())}`)
 
-it=myMap.values()
+it = myMap.values()
 
 // it.next() = {"value":1,"done":false}
 // it.next() = {"value":2,"done":false}
@@ -61,5 +61,3 @@ let plus5 = arr.map((val, i, arr) => {
 // val = 4  i = 3  arr = 1,2,3,4
 // [ 6, 7, 8, 9 ]
 console.log(plus5)
-
-
