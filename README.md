@@ -4,7 +4,7 @@ The point of this project is to document how various javascript features work fo
 
 ## Requirements
 
-* nodejs - I'm on version 10.15.3
+* nodejs - I'm on version 10.16.0 as of 11/2019
 
 ## Usage
 
@@ -20,6 +20,18 @@ For example, ```node js/maps.js``` outputs:
 
 ```
 1 2
+val = 1  key = one  map = [object Map]
+val = 2  key = two  map = [object Map]
+2
+it.next() = {"value":["one",1],"done":false}
+it.next() = {"value":["two",2],"done":false}
+it.next() = {"done":true}
+it.next() = {"value":"one","done":false}
+it.next() = {"value":"two","done":false}
+it.next() = {"done":true}
+it.next() = {"value":1,"done":false}
+it.next() = {"value":2,"done":false}
+it.next() = {"done":true}
 ------------------------------------------------
 val = 1  i = 0  arr = 1,2,3,4
 val = 2  i = 1  arr = 1,2,3,4
@@ -28,7 +40,7 @@ val = 4  i = 3  arr = 1,2,3,4
 [ 6, 7, 8, 9 ]
 ```
 
-## Useful tutorials
+## Resources
 
 ### Documentation and Tutorials
 
