@@ -7,7 +7,7 @@
 //    interests: 'devops',
 //    name: 'raju',
 //    address:
-//    { street: '1 inifinity drive',
+//    { street: '1 Infinity drive',
 //        state: 'OH',
 //        zip: [ 12345, 6789 ] } }
 (function () {
@@ -15,20 +15,20 @@
     const raju = {
         name: 'raju',
         address: {
-            street: '1 inifinity drive',
+            street: '1 Infinity drive',
             state: 'OH',
             zip: [
                 12345,
                 6789
             ]
         }
-    };
+    }
 
 // use spread operator to conjoin one on to another
     const resume = {
         profession: 'developer',
         interests: 'devops',
         ...raju,
-    };
-    console.log('Conjoined object', resume);
-}());
+    }
+    console.log('Conjoined object', resume)
+}())

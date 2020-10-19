@@ -1,8 +1,8 @@
 /*jshint esversion: 6 */
 // Requires ES5
 
-(function(){
-    "use strict";
+(function () {
+    "use strict"
 
     /* Pattern: Inheritance Default */
 
@@ -16,4 +16,4 @@
 
     /* Pattern: Inheritance Parts */
 
-}());
+}())
