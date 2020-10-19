@@ -22,13 +22,13 @@
                 6789
             ]
         }
-    }
+    };
 
 // use spread operator to conjoin one on to another
     const resume = {
         profession: 'developer',
         interests: 'devops',
         ...raju,
-    }
-    console.log('Conjoined object', resume)
-}())
+    };
+    console.log('Conjoined object', resume);
+}());
