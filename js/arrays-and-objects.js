@@ -1,5 +1,4 @@
-/*jshint esversion: 6 */
-// Requires ES5
+/*jshint esversion: 7 */
 
 "use strict";
 
@@ -45,3 +44,8 @@ console.log(JSON.stringify(a, null, 4));
 console.log();
 console.log(JSON.stringify(b, null, 4));
 
+console.log();
+
+// New with ES 7
+// true
+console.log(["one", "two"].includes("two"));

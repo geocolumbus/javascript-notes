@@ -1,26 +1,10 @@
-/*jshint esversion: 6 */
-// Requires ES5
+/*jshint esversion: 8 */
+// Requires ES8
+"use strict";
 
-(function(){
-    "use strict";
+// Trailing commas are allowed
+function test(one, two,) {
+    console.log(one, two);
+}
 
-    /* Function: Method Invocation Pattern */
-
-    /* Function: Function Invocation Pattern */
-
-    /* Function: Constructor Invocation Pattern */
-
-    /* Function: Apply Invocation Pattern */
-
-    /* Function: Module */
-
-    /* Function: Cascade */
-
-    /* Function: Curry */
-
-    /* Function: Memoization */
-
-
-
-
-}());
+test("George", "Zach",); // George Zach

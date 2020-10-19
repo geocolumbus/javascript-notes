@@ -1,6 +1,7 @@
-/*jshint esversion: 6 */
-// Requires ES2018
+/*jshint esversion: 9 */
+// Requires ES9
 
+// allow you to run some code regardless of the successful or not successful execution of the promise
 (function () {
     "use strict";
 
