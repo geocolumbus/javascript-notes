@@ -7,8 +7,8 @@ class Person {
 
     constructor(name, location) {
         console.log(`constructor("${name}", "${location}")`);
-        this._name = name;
-        this._location = location;
+        this.name = name;
+        this.location = location;
         Person.incrementCount();
     }
 
