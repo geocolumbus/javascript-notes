@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-// Requires ES6
 // Extended from arrays to objects in ES9
 "use strict";
 
@@ -22,13 +20,13 @@
                 6789
             ]
         }
-    };
+    }
 
 // use spread operator to conjoin one on to another
     const resume = {
         profession: 'developer',
         interests: 'devops',
         ...raju,
-    };
-    console.log('Conjoined object', resume);
-}());
+    }
+    console.log('Conjoined object', resume)
+}())

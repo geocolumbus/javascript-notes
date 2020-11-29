@@ -1,0 +1,10 @@
+{
+  "esversion": 10,
+  "asi": true,
+  "iterator": false,
+  "node": true,
+  "regexpu": false,
+  "unstable": {
+    "bigint": true
+  }
+}

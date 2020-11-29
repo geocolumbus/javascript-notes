@@ -1,37 +1,35 @@
-/*jshint esversion: 6 */
-// Requires ES5
-"use strict";
+"use strict"
 
-let decoration = "+-+-+-+-+-+-+";
+let decoration = "+-+-+-+-+-+-+"
 
 class t {
     constructor(name) {
-        this.name = name;
+        this.name = name
     }
 
     say() {
-        console.log(`this = ${JSON.stringify(this)}`);
-        console.log(`x = ${this.name}`);
-        console.log(`decoration = ${decoration}`);
-        this.sayLocation("Worthington");
+        console.log(`this = ${JSON.stringify(this)}`)
+        console.log(`x = ${this.name}`)
+        console.log(`decoration = ${decoration}`)
+        this.sayLocation("Worthington")
     }
 
     sayLocation(location) {
-        console.log(`location = ${location}`);
+        console.log(`location = ${location}`)
     }
 }
 
-let n = new t("George");
-n.say();
+let n = new t("George")
+n.say()
 
 // this = {"name":"George"}
 // x = George
 // decoration = +-+-+-+-+-+-+
 // location = Worthington
 
-console.log("------------------------------------------------");
+console.log("------------------------------------------------")
 
 // {}
-console.log(this);
+console.log(this)
 
 
