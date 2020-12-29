@@ -1,35 +1,76 @@
 "use strict"
 
-let decoration = "+-+-+-+-+-+-+"
+// see https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/
 
-class t {
-    constructor(name) {
-        this.name = name
-    }
+// =====================================================
+// Regular Functions
+// =====================================================
 
-    say() {
-        console.log(`this = ${JSON.stringify(this)}`)
-        console.log(`x = ${this.name}`)
-        console.log(`decoration = ${decoration}`)
-        this.sayLocation("Worthington")
-    }
+// --- Simple Invocation ------------------------------
+function one() {
+    console.log(`one(), this=${this}`)
+}
 
-    sayLocation(location) {
-        console.log(`location = ${location}`)
+// undefined when "use strict" is on
+// [object global] when "use strict" is off
+one()
+
+// --- Method Invocation ------------------------------
+
+const myObject = {
+    method() {
+        console.log(this)
     }
 }
 
-let n = new t("George")
-n.say()
+// { method: [Function: method] }
+console.log(myObject)
 
-// this = {"name":"George"}
-// x = George
-// decoration = +-+-+-+-+-+-+
-// location = Worthington
+// { method: [Function: method] }
+myObject.method()
 
-console.log("------------------------------------------------")
+// --- Indirect Invocation ----------------------------
 
-// {}
-console.log(this)
+function myFunction() {
+    console.log(this);
+}
 
+const myContext = { value: 'A' };
 
+myFunction.call(myContext);  // logs { value: 'A' }
+myFunction.apply(myContext); // logs { value: 'A' }
+
+// --- Constructor Invocation --------------------------
+
+// myFunction {} <-- newly created instance
+const newInstance = new myFunction()
+
+// myFunction {}
+console.log(newInstance)
+
+console.log("\n----------------------")
+
+// =====================================================
+// Arrow Functions
+// =====================================================
+
+const myArrowObject = {
+    myMethod(items) {
+        console.log(this); // logs myArrowObject
+        console.log("")
+        const callback = () => {
+            console.log(this); // logs myArrowObject
+        };
+        items.forEach(callback);
+    }
+};
+
+// { myMethod: [Function: myMethod] }
+//
+// { myMethod: [Function: myMethod] } <- this passed to callback for 1
+// { myMethod: [Function: myMethod] } <- this passed to callback for 2
+myArrowObject.myMethod([1, 2]);
+
+// { myMethod: [Function: myMethod] }
+console.log(' ')
+console.log(myArrowObject)
