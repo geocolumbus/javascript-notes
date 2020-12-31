@@ -43,6 +43,7 @@ console.log("------------------------------------------------");
 // Demonstrates computed property/method
 // {"_name":"Hulk","fullName":"Hulk-a-mania"}
 // Hulk-a-mania
+// It is Hulk.
 // Hulk
 (function () {
     console.log("Demonstrates computed property/method")
@@ -54,6 +55,9 @@ console.log("------------------------------------------------");
         _name: "Hulk",
         // computed property name
         ["fullName"]: "Hulk-a-mania",
+        ["otherName"]() {
+            return `It is ${this._name}.`
+        },
         // computed method name
         [providePrefix("name")]() {
             return this._name
@@ -61,5 +65,6 @@ console.log("------------------------------------------------");
     }
     console.log(JSON.stringify(obj))
     console.log(obj.fullName)
+    console.log(obj.otherName())
     console.log(obj.myName())
 }())

@@ -74,3 +74,35 @@ myArrowObject.myMethod([1, 2]);
 // { myMethod: [Function: myMethod] }
 console.log(' ')
 console.log(myArrowObject)
+
+console.log()
+
+// *** Good example of why arrow functions are needed ***
+
+const person = {
+    name: "George",
+    // The context falls through into the arrow function.
+    sayer: function () {
+        // this === person
+        return (val) => {
+            console.log(`${val} ${this.name}`);
+        };
+    },
+    // The context must be passed to the enclosed function
+    // because functions always reference the root context.
+    otherSayer: function () {
+        // this === person
+        const that = this;
+        return function (val) {
+            // this === undefined ('use strict' enabled)
+            console.log(`${val} ${that.name}`);
+        };
+    }
+};
+
+const mySayer = person.sayer();
+mySayer("Mr.");
+
+const myOtherSayer = person.otherSayer();
+myOtherSayer("Mrs.");
+
