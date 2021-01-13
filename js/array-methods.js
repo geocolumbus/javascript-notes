@@ -1,3 +1,6 @@
+// List of array methods:
+// https://www.w3schools.com/jsref/jsref_obj_array.asp
+
 // ~~~ INITIALIZE ARRAYS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // a = [0,1,2,3,4,5,6,7,8,9]
@@ -26,32 +29,3 @@ const e = Array(6)
 
 // f = [255,255,255,255,255,255]
 const f = Array(6).fill(0xFF)
-
-// Array equality - numbers or strings only, not arrays or objects
-function areArraysEqual(a, b) {
-    if (a.length !== b.length) return false
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] !== b[i]) {
-            return false
-        }
-    }
-    return true
-}
-
-const g = [1, 2]
-const h = [1, 2]
-let z
-
-z = g === h // false
-z = g == h // false
-console.log(areArraysEqual(g, h)) // true
-
-h.push(3) // h = [1, 2, 3]
-console.log(areArraysEqual(g, h)) // false
-
-g.push(4) // g = [1, 2, 4]
-console.log(areArraysEqual(g, h)) // false
-
-g.pop()   // g = [1, 2]
-g.push(3) // g = [1, 2, 3]
-console.log(areArraysEqual(g, h)) // true

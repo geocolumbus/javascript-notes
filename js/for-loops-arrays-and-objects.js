@@ -21,12 +21,6 @@ for (let val of a) {
     console.log(val)
 }
 
-
-// for ... of (objects)
-for (let val of b) {
-    console.log(val)
-}
-
 // for ... in (objects)
 // name - george
 // city - worthington
