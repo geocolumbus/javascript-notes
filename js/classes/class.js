@@ -1,5 +1,7 @@
 "use strict"
 
+# See https://coryrylan.com/blog/javascript-es6-class-syntax
+
 let _count = 0 // Static variables are implemented outside the class
 
 class Person {
