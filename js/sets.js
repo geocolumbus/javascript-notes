@@ -1,12 +1,10 @@
-"use strict"
+const mySet = new Set();
 
-const mySet = new Set()
-
-mySet.add("George")
-mySet.add("Alex")
+mySet.add('George');
+mySet.add('Alex');
 
 // George
 // Alex
-mySet.forEach(function (name) {
-    console.log(name)
-})
+mySet.forEach((name) => {
+    console.log(name);
+});

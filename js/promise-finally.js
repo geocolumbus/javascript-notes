@@ -1,18 +1,15 @@
 // allow you to run some code regardless of the successful or not successful execution of the promise
 (function () {
-    "use strict"
-
     const p = new Promise((res, rej) => {
-        res("ok")
+        res('ok');
     })
         .then(() => {
-            console.log("then")
+            console.log('then');
         })
         .catch(() => {
-            console.log("catch")
+            console.log('catch');
         })
         .finally(() => {
-                console.log("finally")
-            }
-        )
-}())
+            console.log('finally');
+        });
+}());

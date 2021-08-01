@@ -1,7 +1,6 @@
 // Extended from arrays to objects in ES9
-"use strict";
 
-//Conjoined object { profession: 'developer',
+// Conjoined object { profession: 'developer',
 //    interests: 'devops',
 //    name: 'raju',
 //    address:
@@ -17,16 +16,16 @@
             state: 'OH',
             zip: [
                 12345,
-                6789
-            ]
-        }
-    }
+                6789,
+            ],
+        },
+    };
 
-// use spread operator to conjoin one on to another
+    // use spread operator to conjoin one on to another
     const resume = {
         profession: 'developer',
         interests: 'devops',
         ...raju,
-    }
-    console.log('Conjoined object', resume)
-}())
+    };
+    console.log('Conjoined object', resume);
+}());

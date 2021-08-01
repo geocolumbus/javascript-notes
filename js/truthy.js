@@ -1,5 +1,3 @@
-"use strict"
-
 /*
  * Demonstrates the following:
  *
@@ -40,71 +38,69 @@
  *  functions that exist are true
  */
 
+console.log('TRUTHINESS in Javascript\n------------------------');
 
-console.log("TRUTHINESS in Javascript\n------------------------")
+1 ? console.log('true:   1') : console.log('false:  1'); // true
+0 ? console.log('true:   0') : console.log('false:  0') // false
+- 1 ? console.log('true:  -1') : console.log('false: -1'); // true
 
-1 ? console.log("true:   1") : console.log("false:  1") // true
-0 ? console.log("true:   0") : console.log("false:  0") // false
-- 1 ? console.log("true:  -1") : console.log("false: -1") // true
+console.log('');
 
-console.log("")
+'' ? console.log('true:  ""') : console.log('false: ""'); // false
+'g' ? console.log('true:  "g"') : console.log('false: "g"'); // true
 
-"" ? console.log("true:  \"\"") : console.log("false: \"\"") // false
-"g" ? console.log("true:  \"g\"") : console.log("false: \"g\"") // true
+console.log('');
 
-console.log("")
+const myNull = null;
 
-let myNull = null
+myNull ? console.log('true:  null') : console.log('false: null'); // false
 
-myNull ? console.log("true:  null") : console.log("false: null") // false
+console.log('');
 
-console.log("")
+let nothing;
 
-let nothing
+nothing ? console.log('true:  undefined') : console.log('false: undefined'); // false
 
-nothing ? console.log("true:  undefined") : console.log("false: undefined") // false
+console.log('');
 
-console.log("")
+typeof undefinedVariable === 'undefined' ? console.log('true:  typeof undefinedVariable === "undefined"') : console.log('false: typeof undefinedVariable === "undefined"'); // true
 
-typeof undefinedVariable === "undefined" ? console.log("true:  typeof undefinedVariable === \"undefined\"") : console.log("false: typeof undefinedVariable === \"undefined\"") // true
+let definedVariable;
+console.log('\nlet definedVariable;');
+typeof definedVariable === 'undefined' ? console.log('true:  typeof definedVariable === "undefined"') : console.log('false: typeof definedVariable === "undefined"'); // true
 
-let definedVariable
-console.log("\nlet definedVariable;")
-typeof definedVariable === "undefined" ? console.log("true:  typeof definedVariable === \"undefined\"") : console.log("false: typeof definedVariable === \"undefined\"") // true
+console.log('\nlet definedVariable = "";');
+definedVariable = '';
+typeof definedVariable === 'undefined' ? console.log('true:  typeof definedVariable === "undefined"') : console.log('false: typeof definedVariable === "undefined"'); // false
 
-console.log("\nlet definedVariable = \"\";")
-definedVariable = ""
-typeof definedVariable === "undefined" ? console.log("true:  typeof definedVariable === \"undefined\"") : console.log("false: typeof definedVariable === \"undefined\"") // false
+console.log('');
 
+const emptyObject = {};
+const fullObject = { name: null };
 
-console.log("")
+console.log('let emptyObject = {}');
+Object.keys(emptyObject).length === 0 && emptyObject.constructor === Object ? console.log('true:  Object.keys(emptyObject).length === 0 && emptyObject.constructor === Object') : console.log('false: Object.keys(emptyObject).length === 0 && emptyObject.constructor === Object');
 
-let emptyObject = {}
-let fullObject = {name: null}
+console.log('\nlet fullObject = {name: null}');
+Object.keys(fullObject).length === 0 && fullObject.constructor === Object ? console.log('true:  Object.keys(fullObject).length === 0 && fullObject.constructor === Object') : console.log('false: Object.keys(fullObject).length === 0 && fullObject.constructor === Object'); // true
+fullObject.hasOwnProperty('name') ? console.log('true:  fullObject.hasOwnProperty("name")') : console.log('false: fullObject.hasOwnProperty("name")'); // true
+fullObject.name ? console.log('true:  fullObject.name') : console.log('false: fullObject.name  <--- because name === null'); // false
+fullObject.hasOwnProperty('undefinedProperty') ? console.log('true:  fullObject.hasOwnProperty("undefinedProperty")') : console.log('false: fullObject.hasOwnProperty("undefinedProperty")'); // false
 
-console.log("let emptyObject = {}")
-Object.keys(emptyObject).length === 0 && emptyObject.constructor === Object ? console.log("true:  Object.keys(emptyObject).length === 0 && emptyObject.constructor === Object") : console.log("false: Object.keys(emptyObject).length === 0 && emptyObject.constructor === Object")
+console.log('');
 
-console.log("\nlet fullObject = {name: null}")
-Object.keys(fullObject).length === 0 && fullObject.constructor === Object ? console.log("true:  Object.keys(fullObject).length === 0 && fullObject.constructor === Object") : console.log("false: Object.keys(fullObject).length === 0 && fullObject.constructor === Object") // true
-fullObject.hasOwnProperty("name") ? console.log("true:  fullObject.hasOwnProperty(\"name\")") : console.log("false: fullObject.hasOwnProperty(\"name\")") // true
-fullObject.name ? console.log("true:  fullObject.name") : console.log("false: fullObject.name  <--- because name === null") // false
-fullObject.hasOwnProperty("undefinedProperty") ? console.log("true:  fullObject.hasOwnProperty(\"undefinedProperty\")") : console.log("false: fullObject.hasOwnProperty(\"undefinedProperty\")") // false
+const emptyArr = [];
+const fullArr = [1];
+emptyArr.length ? console.log('true:  [].length') : console.log('false: [].length'); // false
+fullArr.length ? console.log('true:  [1].length') : console.log('false: [1].length'); // true
 
-console.log("")
+console.log('');
 
-let emptyArr = []
-let fullArr = [1]
-emptyArr.length ? console.log("true:  [].length") : console.log("false: [].length") // false
-fullArr.length ? console.log("true:  [1].length") : console.log("false: [1].length") // true
-
-console.log("")
-
-let fun = function () {
-}
+const fun = function () {
+};
 
 function fun2() {
 }
 
-fun ? console.log("true:  fun, where let fun = function(){}") : console.log("false: fun, where let fun = function(){} ") // true
-fun2 ? console.log("true:  fun2, where function fun2(){}") : console.log("false: fun2, where function fun2(){}") // true
+fun ? console.log('true:  fun, where let fun = function(){}') : console.log('false: fun, where let fun = function(){} '); // true
+fun2 ? console.log('true:  fun2, where function fun2(){}') : console.log('false: fun2, where function fun2(){}'); // true

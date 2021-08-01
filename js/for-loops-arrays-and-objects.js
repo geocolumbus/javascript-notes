@@ -1,15 +1,13 @@
-"use strict"
-
-let a = ["one", "two", "three"]
-let b = {"name": "george", "city": "worthington", "data": [1, 2]}
+const a = ['one', 'two', 'three'];
+const b = { name: 'george', city: 'worthington', data: [1, 2] };
 
 // for ... in (arrays)
 // 0
 // 1
 // 2
-for (let index in a) {
+for (const index in a) {
     if (a.hasOwnProperty(index)) {
-        console.log(index)
+        console.log(index);
     }
 }
 
@@ -17,17 +15,16 @@ for (let index in a) {
 // one
 // two
 // three
-for (let val of a) {
-    console.log(val)
+for (const val of a) {
+    console.log(val);
 }
 
 // for ... in (objects)
 // name - george
 // city - worthington
 // data - 1,2
-for (let prop in b) {
+for (const prop in b) {
     if (b.hasOwnProperty(prop)) {
-        console.log(prop + " - " + b[prop])
+        console.log(`${prop} - ${b[prop]}`);
     }
 }
-
