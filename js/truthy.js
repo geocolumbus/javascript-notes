@@ -17,8 +17,6 @@
  *
  *  typeof undefinedVariable === "undefined" -> true
  *
- *  typeof definedVariable === "undefined"   -> true
- *
  *  typeof definedVariable === "undefined"   -> false
  *
  *  Object.keys(emptyObject).length === 0 && emptyObject.constructor === Object  -> true
